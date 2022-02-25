@@ -1,0 +1,1 @@
+export const taskArraySelector = state => state.tasks;

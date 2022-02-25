@@ -1,0 +1,340 @@
+.right-side {
+    display: flex;
+    flex: 1;
+}
+
+.stage-cont {
+    border-bottom: 1px solid rgba(199, 203, 208, 0.6);
+}
+.right-side-cont {
+    background: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.right-side-menu {
+    overflow: scroll;
+    height: 100vh;
+    background: #ffffff;
+    width: 670px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right-side-menu .heading {
+    font-weight: 600;
+    font-size: 24px;
+    border: none;
+    background: none;
+    outline: none !important;
+    margin-left: 30px;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    padding: 23px 30px;
+    flex-wrap: wrap;
+}
+.buttons .Button {
+    margin-bottom: 5px;
+}
+.modal-cont {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px 40px 40px;
+}
+.Select-SelectContainer_view_default .Select-Control,
+.TextField-InputContainer {
+    border: none;
+    background: #f0f2f5;
+    margin-bottom: 20px;
+}
+.modal-top {
+    margin-bottom: 41px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-top span {
+    cursor: pointer;
+}
+.modal-heading {
+    font-style: normal;
+    font-weight: 600;
+    color: #68778d;
+}
+.Modal-Overlay {
+    background: #282828;
+    opacity: 0.8;
+}
+.buttons-middle-title {
+    margin: 0px 10px;
+}
+.heading {
+    width: 52%;
+    color: #68778d;
+    margin-top: 18px;
+}
+.project-name {
+    margin: 17px 0px 5px 0px;
+    color: rgba(104, 119, 141, 0.7);
+}
+.right-side-menu .Text_view_primary {
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.right-side-menu .step-item-active:first-child {
+    margin-top: 20px;
+}
+.right-side-menu .Collapse-LabelText .step-item {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.right-side .Select-SelectContainer_view_default .Select-Control {
+    border: none;
+    border-radius: 3px;
+    margin: 0px 30px;
+    margin-top: 5px;
+}
+.right-side-menu .right-side {
+    background: #f0f2f5;
+}
+.right-side-cont .right-side-item,
+.select-cont {
+    border-bottom: 1px solid rgba(199, 203, 208, 0.6);
+}
+.right-side-cont .number-round-back {
+    background: #dde3eb;
+}
+.right-side-cont .number-round {
+    background: #cad4e4;
+}
+.right-side .Collapse-Label .Icon {
+    display: none;
+}
+.right-side-cont .Select {
+    margin-bottom: 15px;
+}
+/* .right-side-cont .Select:first-child{
+    margin-top: 25px;
+} */
+.right-side-cont .Select-Control {
+    background: #ffffff;
+}
+.percent-input-cont {
+    display: flex;
+    flex-direction: column;
+}
+.input {
+    padding: 0px 30px;
+    display: flex;
+    align-items: end;
+    width: 50%;
+}
+.input .TextField-InputContainer {
+    background: #ffffff;
+}
+.input .TextField_labelPosition_top {
+    width: 100%;
+}
+.right-side-cont .input-cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 30px;
+}
+.input-cont .input {
+    width: 310px;
+    max-width: 50%;
+}
+.checkbox-cont {
+    margin: 15px 0px;
+}
+.active .number-round {
+    background: #2a96ff;
+}
+.count-item-cont {
+    margin: 0px 30px;
+    margin-top: 12px;
+}
+.middle-line {
+    width: 100%;
+    height: 1px;
+    background: #c7cbd0;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.coefficients-heading {
+    margin: 15px 30px;
+    text-align: left;
+    font-style: normal;
+    font-weight: bold;
+}
+.outline-button {
+    color: #2a96ff;
+    border: 1px dashed #2a96ff;
+    background: none;
+    width: 280px;
+}
+.outline-button:hover {
+    background: none;
+    color: #2a96ff;
+}
+.outline-button-passive {
+    color: #c7cbd0;
+    border: 1px dashed #c7cbd0;
+}
+.outline-button-passive:hover {
+    color: #c7cbd0;
+}
+/* .right-side-cont .icon-delete{
+    position: absolute;
+    top: 20px;
+    right: 6px;
+} */
+.subtitle-icon {
+    background: rgba(157, 197, 255, 0.2);
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    height: 57px;
+    align-items: center;
+}
+.subtitle-icon .title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #36455b;
+}
+.select-item-with-colleps {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.select-icon .icon-delete {
+    margin-top: 15px;
+}
+.input-with-colleps-conts {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.input-with-colleps-conts .count-item {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.input-with-colleps-conts .count {
+    margin: 0px !important;
+}
+.input-with-colleps-conts .count-item {
+    width: 100% !important;
+    margin: 0px;
+    margin-top: 10px;
+}
+.input-with-colleps-conts .input {
+    width: 48%;
+}
+.input-with-colleps-conts .input,
+.input-with-colleps-conts .count-item {
+    padding: 0;
+}
+.input-with-colleps-conts {
+    width: 100%;
+    display: flex;
+}
+.select-icon {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin: 17px 30px 0px 30px;
+}
+
+.select-icon .Select-SelectContainer_view_default .Select-Control {
+    margin: 0;
+    background: white;
+}
+.button-cont {
+    display: flex;
+    justify-content: flex-start;
+    margin: 37px 30px;
+}
+.button-cont button {
+    font-weight: bold;
+    font-size: 16px;
+}
+.input-cont .TextField-InputContainer {
+    background: white;
+}
+.select-icon .count-item {
+    font-weight: 600;
+    font-size: 14px;
+    color: #68778d;
+    margin-left: 20px;
+    margin-right: 10px;
+    width: fit-content;
+    margin-bottom: 0px;
+}
+.select-icon .count-item .count {
+    margin-left: 10px;
+    margin-right: 23px;
+}
+.select-icon .Select {
+    width: 90%;
+    margin: 0px;
+}
+.tree-view {
+    margin: 0px 48px;
+}
+.tree-bottom-button {
+    float: left;
+}
+.icon-characteristics:before {
+    color: #2a96ff;
+}
+.checkbox-item {
+    padding: 0px 30px;
+}
+.total-cost-label {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #36455b;
+}
+.total-cost {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 36px;
+    color: #36455b;
+}
+.total-cost-cont {
+    display: flex;
+    flex-direction: column;
+    padding: 21px 30px;
+    border-top: 1px solid #f0f2f5;
+}
+.icon-file {
+    font-size: 15px !important;
+}
+.Table-CellsRow .TableCell:first-child {
+    color: #237ad1;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+@media (max-width: 1440px) {
+    .input-cont .input {
+        width: 50%;
+    }
+}
+@media (max-width: 1024px) {
+    .right-side-menu {
+        width: 40%;
+    }
+}

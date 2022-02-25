@@ -1,0 +1,129 @@
+.tree-item{
+    display: flex;
+    cursor: pointer;
+}
+.border-cont{
+    display: flex;
+    flex-direction: column;
+}
+.border-left-bottom{
+    border-left: 1px solid #2A96FF;
+    border-bottom: 1px solid #2A96FF;
+}
+.border-left-right{
+    border-left: 1px solid #2A96FF;
+    /* border-right: 1px solid #2A96FF; */
+}
+.tree-item .tree-round{
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(0deg, #2A96FF, #2A96FF), #F0F2F5;
+    border-radius: 30px;
+    margin-left: -16px;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.round-title{
+    display: flex;
+}
+.border-right{
+    border-right: 1px solid #2A96FF;
+}
+.tree-item-title{
+    margin-top: 29px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #36455B;
+    display: flex;
+}
+.border-div{
+    width: 41px;
+    height: 41px;
+}
+.margin-1{
+    margin-left: 25px;
+}
+.margin-2{
+    margin-left: 50px;
+}
+.border-bottom{
+    border-bottom: 1px solid #2A96FF;
+}
+
+.border-cont .top,.border-cont .bottom {
+    border-left: 1px solid #2A96FF;
+}
+.tree-last-element .bottom{
+    border-left:none
+}
+.tree-with-children .bottom{
+    border-right: 1px solid #2A96FF;
+    width: 42px;
+}
+.tree-horizontal-line .top{
+    border-bottom: 1px solid #2A96FF;
+}
+.tree-item .outline-button{
+    margin-top: 20px;
+    width: 214px;
+}
+.tree-item-cont{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: baseline;
+}
+.tree-item-options{
+    display: flex;
+}
+.tree-item-options span{
+    cursor: pointer;
+}
+.icon-delete{
+    cursor: pointer;
+}
+.notes-hover-cont{
+   position: relative; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 16px;
+
+}
+.hover-cont{
+    position: absolute;
+    display: none;
+    top: -79px;
+    left: 22px;
+}
+.notes-hover-cont:hover .hover-cont{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    width: 302px;
+
+}
+.notes-hover-cont .notes{
+    width: 16px;
+    height: 16px;
+    background-color: #65BF5D;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.hover-cont-text{
+    font-weight: 600;
+    color: #68778D;
+}
+.hover-text-ount{
+    display: flex;
+}

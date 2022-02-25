@@ -1,0 +1,47 @@
+.menu-item{
+    width: 40px;
+    height: 40px;
+    /* background: #2A96FF;
+    box-shadow: 0px 2px 8px #1F90FF; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+/* .menu-item-active{ 
+    background: #237AD1;
+    width: 100%;
+} */
+.menu-item:last-child{
+    background: #0962BB;
+    display: flex;
+    flex:1
+}
+.menu-item:first-child{
+    /* background: #237AD1; */
+    border: 1px dashed #FFFFFF;
+}
+.menu-item span{
+    font-size: 32px;
+}
+.menu-item .icon-plus{
+    font-size: 18px;
+}
+.menu-item .icon-plus:before{
+    color: #FFFFFF;
+}
+.Collapse-Content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Collapse-Content, .Collapse-Label{
+    padding: 0 !important;
+}
+.right-side-menu .Collapse-Label .Text_view_primary{
+    margin-left: 0 !important;
+}
+.right-side-menu .Collapse-Label .tree-step-title{
+    margin-left: 30px !important;
+}

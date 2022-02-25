@@ -1,0 +1,1 @@
+export const characteristicsSelectors = state => state.characteristics;

@@ -1,0 +1,11 @@
+.right-side-item{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom:1px solid #F0F2F5;
+    cursor: pointer;
+}
+
+.right-side-menu .step-item-active{
+    background: #F0F2F5;;
+}

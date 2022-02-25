@@ -1,0 +1,57 @@
+.login{
+    background:#237AD1;
+    display: flex;
+    justify-content: end;
+    height: 100vh;
+}
+.login img{
+    width: 65%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.text-field{
+    margin-bottom: 20px;
+    
+}
+.text-field .TextField-Input{
+    height: 50px;
+}
+.text-field .TextField-Input::placeholder{
+    color: #36455B;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+.login-button, .login-button:hover {
+    background-color: #FF8300;
+}
+.login .title{
+    color: #ffffff;
+    margin-bottom: 42px;
+}
+.input-cont-background{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(54px);
+}
+.input-cont{
+    display: flex;
+    flex-direction: column;
+    width: 351px;
+    max-width: 100%;
+}
+.text-field-cont{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: end;
+}
+.TextField-InputContainer_status_error{
+    border: 2px solid red !important;
+}

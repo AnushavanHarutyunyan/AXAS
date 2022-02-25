@@ -1,0 +1,9 @@
+.stage-item{
+    border-bottom: 1px solid rgba(199, 203, 208, 0.6);
+}
+.stage-title{
+    text-align: left;
+    margin-left: 30px;
+    font-weight: 600;
+    padding: 15px 0px;
+}

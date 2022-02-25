@@ -1,0 +1,1 @@
+export const totalCost = state => state.total_cost;

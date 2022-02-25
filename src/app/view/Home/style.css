@@ -1,0 +1,74 @@
+.home-cont {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #e6e9f0;
+}
+.home {
+    padding: 16px 30px;
+}
+.home,
+.table-cont .TableCell {
+    background-color: #e6e9f0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.section-heading,
+.heading {
+    text-align: left;
+}
+.section-heading {
+    font-style: normal;
+    font-weight: bold;
+    line-height: 30px;
+    margin: 27px 0px 16px 0px;
+}
+.table-row-icons {
+    display: flex;
+}
+.scroll {
+    /* width: 100%; */
+    /* overflow-x: auto; */
+}
+.documnet-cont {
+    /* display: flex; */
+    margin-bottom: 56px;
+    /* flex-wrap: nowrap;
+    overflow-x: auto; */
+}
+.table-row-icons span {
+    margin: 0px 13px;
+}
+.slick-next,
+.slick-prev {
+    display: none !important;
+}
+.add-document {
+    width: 200px !important;
+    height: 199px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px dashed #237ad1;
+    cursor: pointer;
+}
+.TableHeader-Buttons_verticalAlign_center {
+    display: none;
+}
+.round {
+    width: 93px;
+    height: 93px;
+    border-radius: 50%;
+    background: rgba(35, 122, 209, 0.2);
+    margin-bottom: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-plus {
+    font-size: 50px;
+    color: #237ad1;
+}
