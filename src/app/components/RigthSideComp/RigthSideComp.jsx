@@ -3,7 +3,43 @@ import { useDispatch } from 'react-redux';
 import { CollectValuesAction } from '../../store/actions';
 import OP from 'object-path';
 import './style.css';
+import React from 'react';
 
+function Export2Word(element, filename = '') {
+    var preHtml = "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>Export HTML To Doc</title></head><body>";
+    var postHtml = "</body></html>";
+    var html = preHtml + document.getElementById(element).innerHTML + postHtml;
+
+    var blob = new Blob(['\ufeff', html], {
+        type: 'application/msword'
+    });
+
+    // Specify link url
+    var url = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(html);
+
+    // Specify file name
+    filename = filename ? filename + '.doc' : 'document.doc';
+
+    // Create download link element
+    var downloadLink = document.createElement("a");
+
+    document.body.appendChild(downloadLink);
+
+    if (navigator.msSaveOrOpenBlob) {
+        navigator.msSaveOrOpenBlob(blob, filename);
+    } else {
+        // Create a link to the file
+        downloadLink.href = url;
+
+        // Setting the file name
+        downloadLink.download = filename;
+
+        //triggering the function
+        downloadLink.click();
+    }
+
+    document.body.removeChild(downloadLink);
+}
 const RideSideComp = () => {
     const value = useSelector((state) => {
         return OP.get(state.values, 'main');
@@ -14,7 +50,7 @@ const RideSideComp = () => {
     if (value.main) {
         const { main } = value;
         return (
-            <div className="rigth-wrapper">
+            <div className="rigth-wrapper" id="exportContent">
                 <h2>Основание для проектирования</h2>
                 <div className="rigth-wrapper-item">
                     <h5>
@@ -86,6 +122,7 @@ const RideSideComp = () => {
                     <h5>Наименование организации</h5>
                     {main.capacity}
                 </div>
+                <button onClick={() => Export2Word('exportContent', 'word-content.docx')}>Export as .docx</button>
             </div>
         );
     }
