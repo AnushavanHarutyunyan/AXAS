@@ -1,8 +1,10 @@
-.rigth-wrapper {
-}
 .rigth-wrapper-item > h5 {
     margin: 20px 0px 6px 0;
 }
 .rigth-wrapper h2 {
     margin-top: 15px;
+}
+.export-button{
+    width: 200px;
+    margin-top: 20px;
 }
