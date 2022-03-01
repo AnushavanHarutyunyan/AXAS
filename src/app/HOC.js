@@ -85,7 +85,7 @@ export const stracture = {
             type: 'selectItem',
             title: 'Наименование области (округа)',
             icon: '',
-            variable: 'name_of_region',
+            variable: 'region_district',
             options: [
                 {
                     label: 'ЦентрНаименование области (округа)альный федеральный округ',
@@ -140,8 +140,8 @@ export const stracture = {
                     id: 'Южный федеральный округ',
                 },
                 {
-                    label: 'Северо-Кавказский Федеральный округ',
-                    id: 'Северо-Кавказский Федеральный округ',
+                    label: 'Северо-Кавказский федеральный округ',
+                    id: 'Северо-Кавказский федеральный округ',
                 },
                 {
                     label: 'Приволжский федеральный округ',
@@ -165,7 +165,7 @@ export const stracture = {
             type: 'selectItem',
             title: 'Наименование района строительства',
             icon: '',
-            variable: 'capacity',
+            variable: 'development_regions',
             options: [
                 {
                     label: 'Алагирский',
@@ -205,7 +205,7 @@ export const stracture = {
             type: 'selectItem',
             title: 'Вид строительства',
             icon: '',
-            variable: 'capacity',
+            variable: 'type_of_construction',
             options: [
                 {
                     label: 'Новое строительство',
@@ -235,7 +235,7 @@ export const stracture = {
             type: 'selectItem',
             title: 'Выбрать тип',
             icon: '',
-            variable: 'capacity',
+            variable: 'customer_or_agent_type',
             options: [
                 {
                     label: 'Заказчик',
@@ -251,7 +251,7 @@ export const stracture = {
             type: 'selectItem',
             title: 'Наименование организации',
             icon: '',
-            variable: 'capacity',
+            variable: 'customer_agent_organization',
             options: [
                 {
                     label: 'ООО “Компания 1',
@@ -277,7 +277,7 @@ export const stracture = {
             type: 'selectItem',
             title: 'Наименование организации',
             icon: '',
-            variable: 'capacity',
+            variable: 'investor_organization',
             options: [
                 {
                     label: 'ООО “Компания 4”',
@@ -303,7 +303,7 @@ export const stracture = {
             type: 'selectItem',
             title: 'Наименование организации',
             icon: '',
-            variable: 'capacity',
+            variable: 'company_organization',
             options: [
                 {
                     label: 'ООО “Компания 7”',
@@ -329,7 +329,7 @@ export const stracture = {
             type: 'selectItem',
             title: 'Выбрать тип',
             icon: '',
-            variable: 'capacity',
+            variable: 'organization_type',
             options: [
                 {
                     label: 'Определяется на конкурентной основе',
@@ -345,7 +345,7 @@ export const stracture = {
             type: 'selectItem',
             title: 'Наименование организации',
             icon: '',
-            variable: 'capacity',
+            variable: 'project_organization',
             options: [
                 {
                     label: 'ООО “Компания 10”',

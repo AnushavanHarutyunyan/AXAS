@@ -50,79 +50,63 @@ const RideSideComp = () => {
     });
     if (value.main) {
         const { main } = value;
+        console.log(main, "mainmainmainmain");
         return (
             <>
                 <div className="rigth-wrapper" id="exportContent">
-                    <h2>Основание для проектирования</h2>
+                    <h2>1․ Основание для проектирования</h2>
                     <div className="rigth-wrapper-item">
                         <h5>
-                            1.1 Перечень приоритетных проектов на 10-летний период
+                            1.1 {id}
                         </h5>
-                        {id}
+                        <h5>
+                            1.2 {main.name_of_region}
+                        </h5>
+                        <h5>
+                            1.3 {main.capacity}
+                        </h5>
+                        <h5>
+                            1.4 {main.capacity}
+                        </h5>
+                        <h5>
+                            1.5 {main.capacity}
+                        </h5>
+                    </div>
+
+                    <h2>2․ Месторасположение предприятия, здания, сооружения</h2>
+                    <div className="rigth-wrapper-item">
+                        <h5>
+                            2.1 {main.region_district},{main.capacity},{main.development_regions}
+                        </h5>
+                        {main.region_district},{main.capacity},{main.development_regions}
                     </div>
                     <div className="rigth-wrapper-item">
                         <h5>
-                            1.2 Решения ПАО «Газпром» по обоснованиям инвестиций
+                            2.2 {main.type_of_construction}
                         </h5>
-                        {main.name_of_region}
                     </div>
+                    <h2>3․ Заказчик/Агент</h2>
                     <div className="rigth-wrapper-item">
                         <h5>
-                            1.3 Комплексные целевые Программы развития и
-                            реконструкции объектов ПАО «Газпром»
+                            {main.customer_or_agent_type},{main.customer_agent_organization}
                         </h5>
-                        {main.capacity}
+
                     </div>
+                    <h2>4․ Инвестор</h2>
                     <div className="rigth-wrapper-item">
-                        <h5>
-                            1.4 Поручение Председателя Правления, заместителя
-                            Председателя Правления ПАО «Газпром», в т.ч. протоколы
-                            совещаний
-                        </h5>
-                        {main.capacity}
+                        <h5>{main.investor_organization}</h5>
                     </div>
+                    <h2>5.	Эксплуатирующая организация	</h2>
                     <div className="rigth-wrapper-item">
-                        <h5>
-                            1.5 Протокол Комиссии газовой промышленности ПАО
-                            «Газпром» по разработке месторождений и использованию
-                            недр, содержащий решение о достаточности проектного
-                            документа на разработку месторождения в качестве
-                            основания для включения затрат на разработку проекта
-                            обустройства месторождения в План капитального
-                            строительства (в раздел «План ПИР»), основанное на
-                            положительном заключении по данному вопросу
-                            заинтересованных структурных подразделений администрации
-                            ПАО «Газпром»
-                        </h5>
-                        {main.capacity}
+                        {main.company_organization}
                     </div>
-                    <h2>Месторасположение предприятия, здания, сооружения</h2>
+                    <h2>6.	Генеральная проектная организация (Генпроектировщик)</h2>
                     <div className="rigth-wrapper-item">
-                        <h5>
-                            2.1 Российская Федерация, наименование области (округа),
-                            района (районов) строительства (реконструкции,
-                            технического перевооружения)
-                        </h5>
-                        {main.capacity}
+                        {main.project_organization}
                     </div>
+                    <h2>7.	Субподрядные проектные организации</h2>
                     <div className="rigth-wrapper-item">
-                        <h5>
-                            2.2 Ситуационная схема (Приложение №номер)(обязательное)
-                        </h5>
-                        {main.capacity}
-                    </div>
-                    <h2>Заказчик/Агент</h2>
-                    <div className="rigth-wrapper-item">
-                        <h5>
-                            Наименование организации с указанием документа, на
-                            основании которого организация назначена агентом
-                        </h5>
-                        {main.capacity}
-                    </div>
-                    <h2>Инвестор</h2>
-                    <div className="rigth-wrapper-item">
-                        <h5>Наименование организации</h5>
-                        {main.capacity}
+                        {main.organization_type},{main.project_organization}
                     </div>
                 </div>
                 <Button className='export-button' label='Export as .docx' onClick={() => Export2Word('exportContent', 'word-content.docx')} />
