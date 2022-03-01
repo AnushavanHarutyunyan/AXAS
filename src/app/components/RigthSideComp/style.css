@@ -1,4 +1,6 @@
 .rigth-wrapper {
+    overflow: scroll;
+    height: 100vh;
 }
 .rigth-wrapper-item > h5 {
     margin: 20px 0px 6px 0;

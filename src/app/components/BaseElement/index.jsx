@@ -17,10 +17,10 @@ import {
     ObjectName,
 } from '..';
 import CheckboxItemGruop from '../CheckboxItemGruop';
+import InputText from '../InputTetxt/InputText';
 import UpploadFile from '../UpploadFile/UpploadFile';
 
 const BaseElement = (props) => {
-    console.log(props, 'baseElement');
     const { data } = props;
     const { type } = data;
     switch (type) {
@@ -58,6 +58,9 @@ const BaseElement = (props) => {
             return <ObjectName {...props} />;
         case 'UpploadFile': {
             return <UpploadFile {...props} />;
+        }
+        case 'InputText': {
+            return <InputText {...props} />;
         }
         default:
             break;

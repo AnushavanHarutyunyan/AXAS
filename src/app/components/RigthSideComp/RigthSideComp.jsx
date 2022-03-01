@@ -15,25 +15,25 @@ const RideSideComp = () => {
         const { main } = value;
         return (
             <div className="rigth-wrapper">
-                <h2>Основание для проектирования</h2>
+                <h2>1. Основание для проектирования</h2>
                 <div className="rigth-wrapper-item">
                     <h5>
                         1.1 Перечень приоритетных проектов на 10-летний период
                     </h5>
-                    {id}
+                    {}
                 </div>
                 <div className="rigth-wrapper-item">
                     <h5>
                         1.2 Решения ПАО «Газпром» по обоснованиям инвестиций
                     </h5>
-                    {main.name_of_region}
+                    {}
                 </div>
                 <div className="rigth-wrapper-item">
                     <h5>
                         1.3 Комплексные целевые Программы развития и
                         реконструкции объектов ПАО «Газпром»
                     </h5>
-                    {main.capacity}
+                    {}
                 </div>
                 <div className="rigth-wrapper-item">
                     <h5>
@@ -41,7 +41,7 @@ const RideSideComp = () => {
                         Председателя Правления ПАО «Газпром», в т.ч. протоколы
                         совещаний
                     </h5>
-                    {main.capacity}
+                    {}
                 </div>
                 <div className="rigth-wrapper-item">
                     <h5>
@@ -56,35 +56,110 @@ const RideSideComp = () => {
                         заинтересованных структурных подразделений администрации
                         ПАО «Газпром»
                     </h5>
-                    {main.capacity}
+                    {}
                 </div>
-                <h2>Месторасположение предприятия, здания, сооружения</h2>
+                <h2>2. Месторасположение предприятия, здания, сооружения</h2>
                 <div className="rigth-wrapper-item">
                     <h5>
                         2.1 Российская Федерация, наименование области (округа),
                         района (районов) строительства (реконструкции,
                         технического перевооружения)
                     </h5>
-                    {main.capacity}
+                    {main.name_of_region}
                 </div>
                 <div className="rigth-wrapper-item">
                     <h5>
                         2.2 Ситуационная схема (Приложение №номер)(обязательное)
                     </h5>
-                    {main.capacity}
+                    {main.name_of_construction_area}
                 </div>
-                <h2>Заказчик/Агент</h2>
+                <h2>3. Заказчик/Агент</h2>
                 <div className="rigth-wrapper-item">
                     <h5>
                         Наименование организации с указанием документа, на
                         основании которого организация назначена агентом
                     </h5>
-                    {main.capacity}
-                </div>
-                <h2>Инвестор</h2>
-                <div className="rigth-wrapper-item">
+                    {main.Customer}
                     <h5>Наименование организации</h5>
-                    {main.capacity}
+                    {main.Name_of_company}
+                </div>
+                <h2>4. Инвестор</h2>
+                <div className="rigth-wrapper-item">
+                    <h5>
+                        Наименование организации с указанием документа, на
+                        основании которого организация назначена агентом
+                    </h5>
+                    {main.Investor}
+                </div>
+                <h2>5. Эксплуатирующая организация</h2>
+                <div className="rigth-wrapper-item">
+                    <h5>
+                        Наименование организации с указанием документа, на
+                        основании которого организация назначена агентом
+                    </h5>
+                    {main.Operating_organization}
+                </div>
+                <h2>6. Генеральная проектная организация</h2>
+                <div className="rigth-wrapper-item">
+                    <h5>
+                        Наименование организации с указанием документа, на
+                        основании которого организация назначена агентом
+                    </h5>
+                    {main.Determined_on_competitive_basis}
+                </div>
+                <h2>7. Субподрядные проектные организации</h2>
+                <div className="rigth-wrapper-item">
+                    <h5>
+                        7.1. Способ определения субподрядных организаций
+                        согласовывается с ПАО «Газпром» по каждому субподрядному
+                        договору в порядке, установленном внутренними
+                        документами ПАО «Газпром». “
+                    </h5>
+                    {main.Subcontractor_design_organizations}
+                </div>
+                <div className="rigth-wrapper-item">
+                    <h5>8. Вид работ</h5>
+                    {main.Type_of_work}
+                </div>
+                <div className="rigth-wrapper-item">
+                    <h5>9. Источник финансирования</h5>
+                    {main.Source_of_financing}
+                </div>
+                <div className="rigth-wrapper-item">
+                    <h5>
+                        10. Срок выполнения работы в соответствии с календарным
+                        планом
+                    </h5>
+                    {main.Work_completion_time}
+                </div>
+                <div className="rigth-wrapper-item">
+                    <h5>11. Исходные данные</h5>
+                    <h6>
+                        11.1 Наименование, шифр (договор), вид предпроектной
+                        документации
+                    </h6>
+                    {main.Initial_data}
+                </div>
+                <div className="rigth-wrapper-item">
+                    <h5>11.2 </h5>
+                    {main.Conclusion_results}
+                </div>
+                <div className="rigth-wrapper-item">
+                    <h5>
+                        11.3 Действующие проектные документы на разработку
+                        месторождений, согласованные Комиссией газовой
+                        промышленности по разработке месторождений и
+                        использованию недр ПАО «Газпром»
+                    </h5>
+                    {main.Current_project_documents_11_3}
+                </div>
+                <div className="rigth-wrapper-item">
+                    <h5>11.4</h5>
+                    {main.Current_project_documents_11_4}
+                </div>
+                <div className="rigth-wrapper-item">
+                    <h5>11.5 </h5>
+                    {main.Project_documentation}
                 </div>
             </div>
         );
@@ -93,4 +168,3 @@ const RideSideComp = () => {
 };
 
 export default RideSideComp;
-//main.capacity

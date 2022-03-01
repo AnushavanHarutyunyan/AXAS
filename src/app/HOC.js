@@ -123,49 +123,9 @@ export const stracture = {
         },
         {
             type: 'selectItem',
-            title: 'Центральный федеральный округ',
-            icon: '',
-            variable: 'capacity',
-            options: [
-                {
-                    label: 'Центральный федеральный округ',
-                    id: 'Центральный федеральный округ',
-                },
-                {
-                    label: 'Северо-Западный федеральный округ',
-                    id: 'Северо-Западный федеральный округ',
-                },
-                {
-                    label: 'Южный федеральный округ',
-                    id: 'Южный федеральный округ',
-                },
-                {
-                    label: 'Северо-Кавказский Федеральный округ',
-                    id: 'Северо-Кавказский Федеральный округ',
-                },
-                {
-                    label: 'Приволжский федеральный округ',
-                    id: 'Приволжский федеральный округ',
-                },
-                {
-                    label: 'Уральский федеральный округ',
-                    id: 'Уральский федеральный округ',
-                },
-                {
-                    label: 'Сибирский федеральный округ',
-                    id: 'Сибирский федеральный округ',
-                },
-                {
-                    label: 'Дальневосточный федеральный округ',
-                    id: 'Дальневосточный федеральный округ',
-                },
-            ],
-        },
-        {
-            type: 'selectItem',
             title: 'Наименование района строительства',
             icon: '',
-            variable: 'capacity',
+            variable: 'name_of_construction_area',
             options: [
                 {
                     label: 'Алагирский',
@@ -202,30 +162,6 @@ export const stracture = {
             ],
         },
         {
-            type: 'selectItem',
-            title: 'Вид строительства',
-            icon: '',
-            variable: 'capacity',
-            options: [
-                {
-                    label: 'Новое строительство',
-                    id: 'Новое строительство',
-                },
-                {
-                    label: 'Техническое перевооружение',
-                    id: 'Техническое перевооружение',
-                },
-                {
-                    label: 'Реконструкция',
-                    id: 'Реконструкция',
-                },
-                {
-                    label: 'Прочее',
-                    id: 'Прочее',
-                },
-            ],
-        },
-        {
             type: 'TitleItem',
             title: '3. Заказчик/Агент',
             icon: '',
@@ -235,7 +171,7 @@ export const stracture = {
             type: 'selectItem',
             title: 'Выбрать тип',
             icon: '',
-            variable: 'capacity',
+            variable: 'Customer',
             options: [
                 {
                     label: 'Заказчик',
@@ -251,7 +187,7 @@ export const stracture = {
             type: 'selectItem',
             title: 'Наименование организации',
             icon: '',
-            variable: 'capacity',
+            variable: 'Name_of_company',
             options: [
                 {
                     label: 'ООО “Компания 1',
@@ -277,7 +213,7 @@ export const stracture = {
             type: 'selectItem',
             title: 'Наименование организации',
             icon: '',
-            variable: 'capacity',
+            variable: 'Investor',
             options: [
                 {
                     label: 'ООО “Компания 4”',
@@ -295,7 +231,7 @@ export const stracture = {
         },
         {
             type: 'TitleItem',
-            title: '5. Экспуатируящая компания',
+            title: '5. Эксплуатирующая организация',
             icon: '',
             variable: '',
         },
@@ -303,7 +239,7 @@ export const stracture = {
             type: 'selectItem',
             title: 'Наименование организации',
             icon: '',
-            variable: 'capacity',
+            variable: 'Operating_organization',
             options: [
                 {
                     label: 'ООО “Компания 7”',
@@ -329,7 +265,7 @@ export const stracture = {
             type: 'selectItem',
             title: 'Выбрать тип',
             icon: '',
-            variable: 'capacity',
+            variable: 'Determined_on_competitive_basis',
             options: [
                 {
                     label: 'Определяется на конкурентной основе',
@@ -342,28 +278,8 @@ export const stracture = {
             ],
         },
         {
-            type: 'selectItem',
-            title: 'Наименование организации',
-            icon: '',
-            variable: 'capacity',
-            options: [
-                {
-                    label: 'ООО “Компания 10”',
-                    id: 'ООО “Компания 10”',
-                },
-                {
-                    label: 'ООО “Компания 11”',
-                    id: 'ООО “Компания 11”',
-                },
-                {
-                    label: 'ООО “Компания 12”',
-                    id: 'ООО “Компания 12”',
-                },
-            ],
-        },
-        {
             type: 'TitleItem',
-            title: '7. Субподрядные проектные организации',
+            title: '7.1 Способ определения субподрядных организаций',
             icon: '',
             variable: '',
         },
@@ -371,23 +287,164 @@ export const stracture = {
             type: 'selectItem',
             title: 'Субподрядные организации разрабатывают',
             icon: '',
-            variable: 'capacity',
+            variable: 'Subcontractor_design_organizations',
+            options: [
+                // {
+                //     label: 'разделы проектной документации',
+                //     id: 'разделы проектной документации',
+                // },
+                // {
+                //     label: 'разделы проектной и основных комплектов рабочей документации',
+                //     id: 'разделы проектной и основных комплектов рабочей документации',
+                // },
+            ],
+        },
+        {
+            type: 'TitleItem',
+            title: '7.2 Субподрядные организации для разработки разделов',
+            icon: '',
+            variable: '',
+        },
+
+        {
+            type: 'TitleItem',
+            title: '8. Вид работ',
+            icon: '',
+            variable: '',
+        },
+        {
+            type: 'selectItem',
+            title: 'Вид работ',
+            icon: '',
+            variable: 'Type_of_work',
             options: [
                 {
-                    label: 'разделы проектной документации',
-                    id: 'разделы проектной документации',
+                    label: 'Новое строительство',
+                    id: 'Новое строительство',
                 },
                 {
-                    label: 'разделы проектной и основных комплектов рабочей документации',
-                    id: 'разделы проектной и основных комплектов рабочей документации',
+                    label: 'Реконструкция',
+                    id: 'Реконструкция',
+                },
+                {
+                    label: 'Техническое перевооружение',
+                    id: 'Техническое перевооружение',
                 },
             ],
+        },
+        {
+            type: 'TitleItem',
+            title: '9. Источник финансирования',
+            icon: '',
+            variable: '',
+        },
+        {
+            type: 'InputText',
+            title: 'Источник финансирования',
+            incon: '',
+            variable: 'Source_of_financing',
+        },
+        {
+            type: 'TitleItem',
+            title: '10. Срок выполнения работы',
+            icon: '',
+            variable: 'Work_completion_time',
+        },
+        {
+            type: 'InputText',
+            title: 'Срок выполнения работы',
+            incon: '',
+            variable: 'Work_completion_time',
         },
         {
             type: 'TitleItem',
             title: '11. Исходные данные',
             icon: '',
             variable: '',
+        },
+        {
+            type: 'UpploadFile',
+            title: '11.1 Наименование, шифр (договор), вид предпроектной документации',
+            icon: '',
+            variable: '',
+        },
+        {
+            type: 'InputText',
+            title: '11.1 Наименование, шифр (договор), вид предпроектной документации',
+            incon: '',
+            variable: 'Initial_data',
+        },
+        {
+            type: 'TitleItem',
+            title: '11.2 Заключение о результатах экспертизы ПАО «Газпром» предпроектной документации',
+            icon: '',
+            variable: '',
+        },
+        {
+            type: 'InputText',
+            title: 'Заключение о результатах экспертизы ПАО «Газпром» предпроектной документации',
+            incon: '',
+            variable: 'Conclusion_results',
+        },
+        {
+            type: 'UpploadFile',
+            title: '11.2 Заключение о результатах экспертизы ПАО «Газпром» предпроектной документации',
+            icon: '',
+            variable: 'Conclusion_results',
+        },
+        {
+            type: 'TitleItem',
+            title: '11.3 Действующие проектные документы на разработку месторождений, согласованные Комиссией газовой промышленности по разработке месторождений и использованию недр ПАО «Газпром»',
+            icon: '',
+            variable: '',
+        },
+        {
+            type: 'UpploadFile',
+            title: '11.3 Действующие проектные документы на разработку месторождений, согласованные Комиссией газовой промышленности по разработке месторождений и использованию недр ПАО «Газпром»',
+            icon: '',
+            variable: 'Current_project_documents_11_3',
+        },
+        {
+            type: 'InputText',
+            title: '11.3 Действующие проектные документы на разработку месторождений, согласованные Комиссией газовой промышленности по разработке месторождений и использованию недр ПАО «Газпром»',
+            incon: '',
+            variable: 'Current_project_documents_11_3',
+        },
+        {
+            type: 'TitleItem',
+            title: '11.4 Действующие проектные документы на разработку месторождений, согласованные ЦКР Роснедр по УВС',
+            icon: '',
+            variable: '',
+        },
+        {
+            type: 'UpploadFile',
+            title: '11.4 Действующие проектные документы на разработку месторождений, согласованные ЦКР Роснедр по УВС',
+            icon: '',
+            variable: 'Current_project_documents_11_4',
+        },
+        {
+            type: 'InputText',
+            title: '11.4 Действующие проектные документы на разработку месторождений, согласованные ЦКР Роснедр по УВС',
+            incon: '',
+            variable: 'Current_project_documents_11_4',
+        },
+        {
+            type: 'TitleItem',
+            title: '11.5 Проектная документация <Наименование, шифр (договор)>, утвержденная в соответствующем порядке',
+            icon: '',
+            variable: '',
+        },
+        {
+            type: 'UpploadFile',
+            title: '11.5 Проектная документация <Наименование, шифр (договор)>, утвержденная в соответствующем порядке',
+            icon: '',
+            variable: 'Project_documentation',
+        },
+        {
+            type: 'InputText',
+            title: 'Проектная документация <Наименование, шифр (договор)>, утвержденная в соответствующем порядке',
+            incon: '',
+            variable: 'Project_documentation',
         },
     ],
 };
