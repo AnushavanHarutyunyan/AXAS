@@ -7,13 +7,11 @@ import { CollectValuesAction } from '../../store/actions';
 import { characteristicsSelector } from '../../store/selectors';
 
 function SelectItem(props) {
-    console.log(props, 'props');
     const { data } = props;
     const { title, variable, options } = data;
     const value = useSelector((state) => {
         return OP.get(state.values, variable);
     });
-    console.log(value, 'value');
     // const main = useSelector((state => {
     //     return OP.get(state.values, 'main')
     // }))

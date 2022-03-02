@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { CollectValuesAction } from '../../store/actions';
 import OP from 'object-path';
 import './style.css';
+
 function CountItem(props) {
     const { data } = props;
     const { title, variable } = data;
