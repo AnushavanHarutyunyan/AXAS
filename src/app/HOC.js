@@ -510,6 +510,241 @@ export const stracture = {
             incon: '',
             variable: 'Project_documentation',
         },
+        {
+            type: 'TitleItem',
+            title: '12. Вид документации',
+            icon: '',
+            variable: '',
+        },
+        {
+            type: 'selectItem',
+            title: '12. Вид документации',
+            icon: '',
+            variable: 'type_documentation',
+            options: [
+                {
+                    label: 'Проектная',
+                    id: 'Проектная',
+                },
+                {
+                    label: 'Проектная и рабочая',
+                    id: 'Проектная и рабочая',
+                },
+            ],
+        },
+        {
+            type: 'selectItem',
+            title: 'Необходимость разработки ОТР',
+            icon: '',
+            variable: 'develop_OTR',
+            options: [
+                {
+                    label: 'Да',
+                    id: 'Да',
+                },
+                {
+                    label: 'Нет',
+                    id: 'Нет',
+                },
+            ],
+        },
+        {
+            type: 'TitleItem',
+            title: '13. Требования к выделению этапов строительства',
+            icon: '',
+            variable: '',
+        },
+        {
+            type: 'selectItem',
+            title: '13. Требования к выделению этапов строительства',
+            icon: '',
+            variable: 'requirements',
+            options: [
+                {
+                    label: 'Требуется',
+                    id: 'Требуется',
+                },
+                {
+                    label: 'Не требуется',
+                    id: 'Не требуется',
+                },
+            ],
+        },
+        {
+            type: 'InputText',
+            title: 'Номера и наименования этапов строительства',
+            incon: '',
+            variable: 'numbers_construction_stages',
+        },
+        {
+            type: 'InputText',
+            title: 'Пункт 13.2. Проектную документацию разработать в виде отдельных копмлектов',
+            incon: '',
+            variable: 'design_documentation',
+        },
+        {
+            type: 'TitleItem',
+            title: '14. Требования по вариантной разработке',
+            icon: '',
+            variable: '',
+        },
+        {
+            type: 'selectItem',
+            title: '14. Требования по вариантной разработке',
+            icon: '',
+            variable: 'development_requirements',
+            options: [
+                {
+                    label: 'Требуется',
+                    id: 'Требуется',
+                },
+                {
+                    label: 'Не требуется',
+                    id: 'Не требуется',
+                },
+            ],
+        },
+        {
+            type: 'InputText',
+            title: 'Наименование вариантной проработки технического решения и количество выполняемых технико-экономических сравнений',
+            incon: '',
+            variable: 'number_feasibility_comparisons_performed',
+        },
+        {
+            type: 'TitleItem',
+            title: '15. Особые условия строительства',
+            icon: '',
+            variable: '',
+        },
+        {
+            type: 'selectItem',
+            title: '15. Особые условия строительства',
+            icon: '',
+            variable: 'special_construction_conditions',
+            options: [
+                {
+                    label: 'Отсутствуют',
+                    id: 'Отсутствуют',
+                },
+                {
+                    label: 'Присутствуют',
+                    id: 'Присутствуют',
+                },
+            ],
+        },
+        {
+            type: 'InputText',
+            title: 'Наименование условий',
+            incon: '',
+            variable: 'name_conditions',
+        },
+        {
+            type: 'TitleItem',
+            title: '16. Сведения об объекте капитального строительства по назначению и функционально-технологическим особенностям',
+            icon: '',
+            variable: '',
+        },
+        {
+            type: 'InputText',
+            title: 'Наименование условий',
+            incon: '',
+            variable: 'name_conditions',
+        },
+        {
+            type: 'InputText',
+            title: 'Наименование вида объекта капитального строительства',
+            incon: '',
+            variable: 'name_capital_construction_object',
+        },
+        {
+            type: 'TitleItem',
+            title: '17.1. Генпроектировщику при разработке',
+            icon: '',
+            variable: '',
+        },
+        {
+            type: 'selectItem',
+            title: '17.1. Генпроектировщику при разработке',
+            icon: '',
+            variable: 'generaldesigner_during_development',
+            options: [
+                {
+                    label: 'ОТР',
+                    id: 'ОТР',
+                },
+                {
+                    label: 'Проектной документации',
+                    id: 'Проектной документации',
+                },
+            ],
+        },
+        {
+            type: 'TitleItem',
+            title: '18. Требование о необходимости соответствия проектной документации обоснованию безопасности опасного производственного объекта',
+            icon: '',
+            variable: '',
+        },
+        {
+            type: 'selectItem',
+            title: 'Требование о необходимости соответствия проектной документации обоснованию безопасности опасного производственного объекта',
+            icon: '',
+            variable: 'requirement_need_design_documentation',
+            options: [
+                {
+                    label: 'Не требуется',
+                    id: 'Не требуется',
+                },
+                {
+                    label: 'Требуется',
+                    id: 'Требуется',
+                },
+            ],
+        },
+        {
+            type: 'TitleItem',
+            title: '19. Объект проектирования соответствует критериям объектов федерального трубопроводного транспорта, подлежащих отображению на СТП РФ, установленным распоряжением Правительства Российской Федерации от 09.02.2012 № 162-р',
+            icon: '',
+            variable: '',
+        },
+        {
+            type: 'selectItem',
+            title: 'Объект проектирования соответствует критериям объектов федерального трубопроводного транспорта, подлежащих отображению на СТП РФ, установленным распоряжением Правительства Российской Федерации от 09.02.2012 № 162-р',
+            icon: '',
+            variable: 'object_criteria_federal_transport_facilities',
+            options: [
+                {
+                    label: 'Да',
+                    id: 'Да',
+                },
+                {
+                    label: 'Нет',
+                    id: 'Нет',
+                },
+            ],
+        },
+        {
+            type: 'TitleItem',
+            title: 'Выполнение инженерных изысканий',
+            icon: '',
+            variable: '',
+        },
+        {
+            type: 'selectItem',
+            title: 'Выполнение инженерных изысканий',
+            icon: '',
+            variable: 'performing_engineering_surveys',
+            options: [
+                {
+                    label: 'Не требуется',
+                    id: 'Не требуется',
+                },
+                {
+                    label: 'Требуется',
+                    id: 'Требуется',
+                },
+            ],
+        },
+
     ],
 };
 

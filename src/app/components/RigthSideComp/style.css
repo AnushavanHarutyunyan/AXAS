@@ -1,9 +1,15 @@
 .rigth-wrapper {
     overflow: scroll;
     height: 100vh;
+    padding: 15px;
 }
-.rigth-wrapper-item > h5 {
-    margin: 20px 0px 6px 0;
+.task-heading{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.rigth-wrapper-item > div {
+    margin: 0px 0px 6px 0;
+    font-size: 16px;
 }
 .rigth-wrapper h2 {
     margin-top: 15px;
@@ -11,4 +17,21 @@
 .export-button {
     width: 200px;
     margin-top: 20px;
+}
+.elem{
+    margin-bottom: 20px;
+    display: flex;
+    flex: 1;
+}
+.elem h4{
+    width: 270px;
+    margin-right: 10px;
+    float: left;
+    font-size: 16px;
+    font-weight: normal;
+}
+.rigth-wrapper-item{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
