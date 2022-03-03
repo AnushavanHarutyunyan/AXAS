@@ -35,3 +35,12 @@
     flex-direction: column;
     flex: 1;
 }
+.rigth-wrapper-item ol{
+    padding-left: 35px;
+}
+.number_li{
+    display: flex;
+}
+.number_li li{
+    margin-left: 25px;
+}
